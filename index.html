@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WiTec</title>
+    <link rel="stylesheet" href="flexs.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+  </head>
+  <body>
+
+      <div id="topo">
+        <img id="logo" src="./img/logow.png" alt="Logo">
+      </div>
+
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div id="fundo">
+
+    <div class="slides">
+      <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">Destaque!</div>
+      <img src="./img/Ciri.png"   width = "500px" height = "300px">
+      <div class="text"><a href="Ciri.html">The Witcher: Ciri pode ganhar mais espaço em novos jogos, diz roteirista</a></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">Destaque!</div>
+      <img src="./img/huawei.png"   width = "500px" height = "300px">
+      <div class="text"><a href="huawei.html">Huawei P50 pode ser primeiro smartphone a trazer tecnologia de Liquid Lens para as câmeras</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">Destaque!</div>
+      <img src="./img/masterC.png"   width = "500px" height = "300px">
+      <div class="text"><a href="halo.html">Halo Infinite: Novidades serão reveladas em julho</a></div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+  <br>
+
+  <div class="noticia1">
+    <img src="./img/Ciri.png" alt="Ciri">
+    <div class= fundotitulo>
+      <div class="titulo"><a href="Ciri.html" target>The Witcher: Ciri pode ganhar mais espaço em novos jogos, diz roteirista</a></div>
+    </div>
+    <br>
+    <div class="textonot"><p>Jakub Szamałek, principal roteirista da CD Projekt Red, afirmou que gostaria de contar mais sobre Ciri nos próximos jogos da franquia The Witcher.</p></div>
+  </div>
+
+  <div class="noticia2">
+    <img src="./img/masterC.png" alt="Master Chief">
+    <div class= fundotitulo>
+      <div class="titulo"><a href="halo.html" target>Halo Infinite: Novidades serão reveladas em julho</a></div>
+    </div>
+    <br>
+    <div class="textonot"><p>A 343 Studios confirmou que Halo Inifinite será um dos destaques no evento de julho da Microsoft, que será focado em jogos do Xbox Series X.</p></div>
+  </div>
+
+  <div class="noticia3">
+    <img src="./img/huawei.png" alt="Huawei">
+    <div class= fundotitulo>
+      <div class="titulo"><a href="huawei.html">Huawei P50 pode ser primeiro smartphone a trazer tecnologia de Liquid Lens para as câmeras</a></div>
+    </div>
+    <br>
+    <div class="textonot"><p>Em constante guerra com o governo dos EUA e buscando por alternativas para os chips que equipam seus smartphones, a Huawei parece se manter firme no desenvolvimento e aplicação de novas tecnologias.</p></div>
+  </div>
+
+  <div class="noticia4">
+    <img src="./img/escola.png" alt="Escola">
+    <div class= fundotitulo>
+      <div class="titulo"><a href="escola.html">Era tecnológica: escolas mudam a forma de ensinar</a></div>
+    </div>
+    <br>
+    <div class="textonot"><p>Educação Maker, aulas de robótica, aplicativos de celulares e outras ferramentas transformam estudantes para um novo mundo</p></div>
+  </div>
+
+    <div class="anuncio">
+      <img src="./img/skittles.gif" alt="propaganda">
+    </div>
+
+
+    <script>
+      var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }
+
+    </script>
+
+  <script>
+
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+} else {
+  navbar.classList.remove("sticky");
+}
+}
+</script>
+<footer><i>Criado por Jaisom U. e Leandro S.</i></footer>
+</div>
+  </body>
+</html>
