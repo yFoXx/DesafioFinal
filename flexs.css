@@ -26,6 +26,7 @@ font-family: 'H', 'Trebuchet MS', Helvetica;
   display: block;
   position: relative;
   margin: 0px;
+  background-color: white;
 }
 
 #fundo::after{
@@ -46,6 +47,7 @@ font-family: 'H', 'Trebuchet MS', Helvetica;
   height: 320px;
   position: relative;
   margin: 0px;
+  background-color:black;
 }
 
 #topo::after{
@@ -207,13 +209,18 @@ font-family: 'H', 'Trebuchet MS', Helvetica;
 }
 
 @media only screen and (max-width: 600px) {
-  
-  }
 
+  }
+.card-body{
+  text-align: center;
+  color: yellow;
+  font-size: 2em;
+  background-color: blue;
+}
 .noticia1{
   max-width: 800px;
   margin: -332px 650px;
-  padding: 10px;
+  padding: 20px;
 
   width: 350px;
   height: 250px;
@@ -222,8 +229,7 @@ font-family: 'H', 'Trebuchet MS', Helvetica;
 .noticia2{
   max-width: 800px;
   margin: 82px 1050px;
-  padding: 10px;
-
+  padding: 20px;
   width: 350px;
   height: 250px;
 }
@@ -231,7 +237,7 @@ font-family: 'H', 'Trebuchet MS', Helvetica;
 .noticia3{
   max-width: 800px;
   margin: 180px 650px;
-  padding: 10px;
+  padding: 20px;
 
   width: 350px;
   height: 250px;
@@ -240,7 +246,7 @@ font-family: 'H', 'Trebuchet MS', Helvetica;
 .noticia4{
   max-width: 800px;
   margin: -431px 1050px;
-  padding: 10px;
+  padding: 20px;
 
   width: 350px;
   height: 250px;
@@ -306,6 +312,8 @@ font-family: 'H', 'Trebuchet MS', Helvetica;
 footer{
   margin: 400px 10px;
   margin-bottom: 50px;
+  color: red;
+  font-size: 2em;
 }
 
 footer > i{
