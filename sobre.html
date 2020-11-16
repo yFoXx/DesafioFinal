@@ -5,40 +5,54 @@
     <title>Sobre</title>
     <link rel="stylesheet" href="flexs.css">
     <link rel="stylesheet" href="flexs2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
-    <div id="topo">
-      <img id="logo" src="./img/logow.png" alt="Logo">
-    </div>
+    <header class="cabecalho">
+      <div id="topo">
+        <img id="logo" src="./img/logow.png" alt="Logo" height=200px width=200px>
+      </div>
+      <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </header>
 
-  <div id="navbar">
-    <a href="index.html">Home</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="contato.html">Contato</a>
-
-  </div>
-
-  <div id="fundo">
+  <div class=role="main">
+    <div class="container justify-content-center d-flex align-items-center pb-4 pt-4">
+      <div class="jumbotron pt-4 pb-4" style="background-color: #FFF";>
+    <div class="card-deck">
+    <div class="card">
     <div class="Jaisom">
-      <img class = "eu" src="./img/fotinho.jpeg" alt="Eu">
-      <div class="texts1">
+      <img class = "img-fluid" src="./img/fotinho.jpeg" height=600px width=500px>
+      <div class="card-title">
         <p>Jaisom Umpierre</p>
+      </div>
+      <p clas="card-text">
         <p>Cursando Ensino Médio Integrado ao Técnico</p>
-        <p>Informática - 5º Semestre</p>
+        <p>Informática - 6º Semestre</p>
         <p>jaisomhda28@gmail.com</p>
+      </p>
       </div>
     </div>
+    <div class="card">
     <div class="Leandro">
-      <img class = "ls" src="./img/leandro.jpeg" alt="Leandro">
+      <img class = "img-fluid" src="./img/leandro.jpeg" alt="Leandro" height=500px width=500px>
       <div class="texts2">
         <p>Leandro Souza</p>
         <p>Cursando Ensino Médio Integrado ao Técnico</p>
-        <p>Informática - 5º Semestre</p>
+        <p>Informática - 6º Semestre</p>
         <p>leandrosouzabatman1@gmail.com</p>
       </div>
     </div>
-    <footer><i>Criado por Jaisom U. e Leandro S.</i></footer>
+    </div>
   </div>
+</div>
+</div>
+</div>
+<footer><i>Criado por Jaisom U. e Leandro S.</i></footer>
   </body>
 </html>
