@@ -1,0 +1,96 @@
+body, ul, li, p{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+header{
+  margin-bottom: 100px;
+}
+
+#navbar{
+  background-color: #333;
+  padding-top: 10px;
+  font-size: 1.3em;
+  padding-left: 20px;
+  word-spacing: 50px;
+}
+#navbar a:hover{
+  color: red;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0px 1px 20px 1px;
+  z-index: 1;
+  transition: 0.2s;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  transition: 0.2s;
+
+}
+#navbar a:hover{
+  color:#81F781;
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.noticias{
+
+}
+.noticia1{
+  padding: 20px;
+  float: left;
+}
+.noticia2{
+  padding: 20px;
+  float: left;
+}
+.noticia3{
+  padding: 20px;
+  float: left;
+}
+.noticia4{
+  padding: 20px;
+}
+.anuncio{
+  padding-left: 20px;
+}
+.card-body{
+  text-align: center;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+}
+footer{
+  text-align: center;
+  padding-bottom: 20px;
+  color: blue;
+  font-size: 1.5em;
+}
