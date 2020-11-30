@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>WiTec</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flexs.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <link rel="manifest" href="Manifest.json"/>
+    <script src="register.js" type="text/javascript"></script>
+    <script src="sw.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript">
+
+    </script>
 
   </head>
   <header>
@@ -63,6 +69,7 @@
           <h4 class="card-text"><a href="Ciri.html" target>The Witcher: Ciri pode ganhar mais espaço em novos jogos, diz roteirista</a></h4>
           </div>
           <h5 class="card-text"><p>Jakub Szamałek, principal roteirista da CD Projekt Red, afirmou que gostaria de contar mais sobre Ciri nos próximos jogos da franquia The Witcher.</p></h5>
+          <button class="btn btn-outline-sucess" onclick="sharenoticia('Ciri', 'Noticia Ciri', 'Ciri.html')">Compartilhar</button>
         </div>
 
       <!-- <div class=role="main"> -->
@@ -73,6 +80,8 @@
           <h4 class="card-text"><a href="halo.html" target>Halo Infinite: Novidades serão reveladas em julho</a></h4>
           </div>
         <h5 class="card-text"><p>A 343 Studios confirmou que Halo Inifinite será um dos destaques no evento de julho da Microsoft, que será focado em jogos do Xbox Series X.</p></h5>
+        <button class="btn btn-outline-sucess" onclick="sharenoticia('Master Chief', 'Noticia MC', 'halo.html')">Compartilhar</button>
+
         </div>
 
     <div class="card">
@@ -82,6 +91,8 @@
       <h4 class="card-text"><a href="huawei.html" target>Huawei P50 pode ser primeiro smartphone a trazer tecnologia de Liquid Lens para as câmeras</a></h4>
       </div>
     <h5 class="card-text"><p>Em constante guerra com o governo dos EUA e buscando por alternativas para os chips que equipam seus smartphones, a Huawei parece se manter firme no desenvolvimento e aplicação de novas tecnologias.</p></h5>
+    <button class="btn btn-outline-sucess" onclick="sharenoticia('Huawei', 'Noticia Huawei', 'huawei.html')">Compartilhar</button>
+
     </div>
 
 
@@ -92,6 +103,8 @@
     <h4 class="card-text"><a href="escola.html" target>Era tecnológica: escolas mudam a forma de ensinar</a></h4>
     </div>
   <h5 class="card-text"><p>Educação Maker, aulas de robótica, aplicativos de celulares e outras ferramentas transformam estudantes para um novo mundo</p></h5>
+  <button class="btn btn-outline-sucess" onclick="sharenoticia('Escola', 'Noticia Escola', 'escola.html')">Compartilhar</button>
+
   </div>
 </div>
 </div>
