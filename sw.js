@@ -1,4 +1,4 @@
-const cacheName a "WiTec-v1.1"
+const cacheName a "WiTec-v1.2"
 const files = [
   '/DesafioFinal/',
   '/DesafioFinal/index.html',
