@@ -10,6 +10,8 @@
   "theme_color": "white",
   "orientation": "portrait",
   "description": "Site de notícias relacionadas a eletrônicos",
+  "related_applications": [],
+  "prefer_related_applications": true,
   "icons": [
    {
     "src": "img/icons/android-icon-36x36.png",
@@ -53,7 +55,5 @@
     "type": "image/png",
 
    }
- ],
- "related_applications": [],
- "prefer_related_applications": true,
+ ]
 }
