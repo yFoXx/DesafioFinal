@@ -2,6 +2,7 @@ const cacheName = "WiTec-v1.55"
 const files = [
   '/DesafioFinal/',
   '/DesafioFinal/index.html',
+  '/DesafioFinal/script.js'
   '/DesafioFinal/flexs.css',
   '/DesafioFinal/flexs2.css',
   'https://code.jquery.com/jquery-3.2.1.slim.min.js',
