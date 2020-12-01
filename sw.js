@@ -10,7 +10,6 @@ const files = [
   '/DesafioFinal/escola.html',
   '/DesafioFinal/flexs.css',
   '/DesafioFinal/flexs2.css',
-  '/DesafioFinal/style.css',
   'https://code.jquery.com/jquery-3.2.1.slim.min.js',
   'https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js',
   'https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js',
